@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Objects;
 
-@RestController
+@Controller
 public class HelloController {
 
     private final HelloService helloService;
@@ -27,12 +27,7 @@ public class HelloController {
 
     @GetMapping("/")
     public String main() {
-        return "welcome to korea";
-    }
-
-    @GetMapping("/hello")
-    public String hello(String name) {
-        return helloService.sayHello(Objects.requireNonNull(name));
+        return "PAWEENA BABO ^_^";
     }
 
 }
